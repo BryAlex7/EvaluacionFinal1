@@ -26,3 +26,15 @@ def fib(n):
         a, b = b, a+b
     print()
 fib(1000)
+
+## Funcion contador de vocales
+def contar_vocales(cadena):
+	contador = 0
+	for letra in cadena:
+		if letra.lower() in "aeiou":
+			contador += 1
+	return contador
+    
+cadena = "Hola mundo"
+cantidad = contar_vocales(cadena)
+print(f"En la cadena '{cadena}'' hay {cantidad} vocales")
